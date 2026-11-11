@@ -1,0 +1,29 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<a href="{% url 'books:list_books' %}">
+    Back to List of Books
+</a>
+
+<h1>Details of Book1</h1>
+
+<h2>C++ How to Program</h2>
+
+<h2>Author: Paul Deitel and Harvey Deitel</h2>
+
+<p>
+    <strong>
+        C++ How to Program is a programming textbook
+        that introduces C++ concepts, object-oriented
+        programming, and problem-solving techniques.
+    </strong>
+</p>
+
+<img src="{% static 'book1.jpg' %}"
+     alt="Book 1"
+     width="200"
+     height="200">
+
+{% endblock %}
